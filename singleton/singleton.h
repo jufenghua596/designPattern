@@ -1,7 +1,6 @@
-#pragma  once
 #include "stdafx.h"
-#include  <iostream>
-
+#ifndef singleton_h__
+#define singleton_h__
 class Singleton {
 public:
 	static Singleton* getInstance();
@@ -13,4 +12,5 @@ private:
 	Singleton& operator=(const Singleton&);
 	static Singleton* m_instance;
 };
+#endif // singleton_h__
 

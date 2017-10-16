@@ -1,0 +1,3 @@
+﻿x64\Debug\singleton.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  singleton.vcxproj -> D:\project\cpp-source\git\designPattern\designPattern\x64\Debug\singleton.exe
+  singleton.vcxproj -> D:\project\cpp-source\git\designPattern\designPattern\x64\Debug\singleton.pdb (Partial PDB)
