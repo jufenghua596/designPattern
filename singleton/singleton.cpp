@@ -1,27 +1,24 @@
-// singleton.cpp : 定义控制台应用程序的入口点。
-//
 #include "stdafx.h"
-#include  <iostream>
+#include "singleton.h"
 
-class Singleton {
-public:
-	static Singleton* getInstance() 
-	{
-		if (m_instance == NULL)
-			m_instance = new Singleton();
-		return m_instance;
-	}
-private:
-	Singleton() {};
-	static Singleton* m_instance;
-};
+Singleton::Singleton(const Singleton&) {
 
-Singleton* Singleton::m_instance = NULL; //类的静态成员变量需要在类外边初始化
-
-int main()
-{
-	
-	Singleton* p1 = Singleton::getInstance();
-    return 0;
 }
 
+
+Singleton& Singleton::operator=(const Singleton&) {
+	return *this;
+}
+//类的静态成员变量需要在类外边初始化
+//Singleton* Singleton::m_instance = new Singleton();
+//Singleton* Singleton::getInstance() {
+//	return m_instance;
+//}
+
+Singleton* Singleton::m_instance = NULL;
+Singleton* Singleton::getInstance()
+{
+	if (m_instance == NULL)
+		m_instance = new Singleton();
+	return m_instance;
+}
