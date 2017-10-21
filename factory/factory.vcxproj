@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C04B7EDB-D9A5-4B32-9DB1-59C34D62FA25}</ProjectGuid>
-    <RootNamespace>singleton</RootNamespace>
+    <ProjectGuid>{D3E6376E-C13C-498B-89A5-944C24598092}</ProjectGuid>
+    <RootNamespace>factory</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -111,7 +111,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="singleton.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="ShapeFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="ShapeFactory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
